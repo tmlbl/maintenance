@@ -1,11 +1,11 @@
 var app = require('express')();
 
 app.get('/logo.png', function (req, res) {
-  res.sendFile('/app/logo.png');
+  res.sendFile(__dirname + '/logo.png');
 });
 
 app.all('*', function (req, res) {
-	res.sendFile('/app/index.html');
+	res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(3030, function () {
