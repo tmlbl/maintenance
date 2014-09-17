@@ -4,4 +4,4 @@ node_js:
   - 0.10.30
 
 after_success:
-  - "curl -H 'Content-Type: application/json' -d '{"repository":{"repo_name":"shippable/temp"}}' <machine_ip_addr>:6600
+  - curl -H 'Content-Type: application/json' -d '{"repository":{"repo_name":"shippable/temp"}}' <machine_ip_addr>:6600
